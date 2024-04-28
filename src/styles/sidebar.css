@@ -1,0 +1,111 @@
+/* src/styles/Sidebar.css */
+.sidebar {
+  display: flex; /* Using flexbox for layout */
+  flex-direction: column; /* Align children vertically */
+  align-items: center; /* Center children horizontally */
+  width: 200px;
+  background-color: #013E38;
+  color: white;
+  height: 100vh;
+  padding: 1rem;
+  padding-top: 3rem; /* Remove top padding */
+}
+  
+.sidebar h1 {
+  color: #FBFCF8;
+  margin-bottom: 1rem;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  padding: 0.5rem 0;
+  cursor: pointer;
+}
+
+.sidebar li:hover {
+  background-color: #3498db;
+}
+
+.sidebar li.active {
+  background-color: #7f8c8d; /* Or any gray shade you prefer */
+}
+
+.request-button {
+  display: block; /* Full-width block element */
+  margin: 10px 0; /* Margin for spacing */
+  padding: 10px 15px; /* Padding for better click area */
+  background-color: #4CAF50; /* Green background */
+  color: white; /* White text */
+  font-weight: bold; /* Bold text */
+  text-transform: uppercase; /* Uppercase text for emphasis */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  text-align: center; /* Centered text */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.request-button:hover {
+  background-color: #45a049; /* Slightly darker green on hover */
+}
+
+
+/* Assuming you have a class `sidebar` for your sidebar container */
+.sidebar a, .sidebar a:visited, .sidebar a:active {
+  color: white; /* Set text color to white */
+  text-decoration: none; /* Removes underline from links */
+}
+
+.sidebar a:hover {
+  text-decoration: underline; /* Optional: if you want to underline on hover */
+}
+
+/* If you're using NavLink, you can directly target the class added by it */
+.sidebar .nav-link {
+  color: white; /* Set text color to white */
+  text-decoration: none; /* Removes underline from links */
+}
+
+.sidebar .nav-link:hover {
+  text-decoration: underline; /* Optional: if you want to underline on hover */
+}
+
+/* If you're using active styling for NavLink */
+.sidebar .active {
+  font-weight: bold; /* Example style for active link */
+  /* You can also add other styles for active state here */
+}
+
+.logout-container {
+  padding: 10px;
+  margin-top: auto;
+  text-align: center; /* Center-align the logout button */
+  padding-bottom: 60px;
+}
+
+.logout-button {
+  background: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 10px; /* Rounded edges */
+  width: 100%; /* Full width of the container */
+  transition: background-color 0.3s;
+}
+
+.logout-button:hover {
+  background-color: #333;
+}
+
+.sidebar-logo {
+  display: block; /* Ensures it takes the full width */
+  max-width: 100%; /* Makes sure the logo is responsive and fits the container */
+  height: auto; /* Keeps the aspect ratio of the image */
+  margin-bottom: 10px; /* Optional spacing between the logo and the title */
+}
+

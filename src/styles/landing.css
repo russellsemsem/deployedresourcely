@@ -1,0 +1,171 @@
+.landing {
+    display: flex;
+    flex-direction: row;    /* Align children horizontally */
+    align-items: center;    /* Vertically center the children */
+    justify-content: center;/* Horizontally center the children */
+    height: 100vh;
+    background: linear-gradient(to right, #FBFCF8 60%, #013E38 40%); /* Cream for the first 60%, forest green for the remaining 40% */
+    padding: 20px;           /* Add some padding around the contents */
+}
+
+.content {
+    position: absolute; /* Change from absolute to relative */
+    left: 0; /* Remove the left offset */
+    top: 0; /* Remove the top offset */
+    transform: none; /* Remove the transform */
+    width: 100%; /* Occupy the full width */
+    text-align: left; /* Add text-align: left to align content to the left */
+    padding: 20px; /* Keep the padding */
+    left: 1%;
+    top: 40%;
+}
+
+.text-heading, .text-subheading, .text-info {
+    margin: 10px 0; /* Spacing between text elements */
+}
+
+.text-heading {
+    font-size: 70px; /* Larger text for heading */
+    font-weight: 800;
+    color: #313638; /* Example color */
+}
+
+.text-subheading {
+    font-size: 40px; /* Medium size for subheading */
+    font-weight: 800;
+    color: #013E38; /* Example color */
+}
+
+.text-info {
+    font-size: 15px; /* Standard text size */
+    color: black; /* Default color */
+    overflow-wrap: break-word; /* Break the text into a new line when necessary */
+    max-width: 650px;
+}
+
+.top-right-corner {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 20px;
+}
+
+.signup-link {
+    color: white;
+    font-weight: bold; /* Makes the text bold */
+    text-decoration: none;
+}
+
+.login-form {
+    padding: 20px;
+    background: white;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    width: 300px; /* Specify width here */
+}
+
+.login-header {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0; /* Increased padding */
+    font-size: 30px; /* Added font size */
+}
+
+.login-form div {
+    margin-bottom: 15px;
+}
+
+.login-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333; /* Darker text color for better readability */
+}
+
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Includes padding and border in the element's width */
+}
+
+.login-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #0056b3; /* Dark blue background */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-form button:hover {
+    background-color: #003d82; /* Slightly darker blue on hover */
+}
+
+.signup-prompt {
+    margin-top: 20px;
+    padding: 15px;
+    background: white;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    width: 310px; 
+    text-align: center;
+}
+
+.signup-prompt p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.signup-prompt a {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+.login-image {
+    width: 300px;           /* Set the width to match the login form */
+    height: auto;           /* Automatically adjust the height to maintain the aspect ratio */
+    margin-right: 20px;     /* Keeps space between the image and the form container */
+}
+
+.forms-container {
+    position: absolute;
+    top: 50%;
+    right: 7%;
+    transform: translateY(-50%);
+}
+
+.home-button-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px;
+}
+
+.home-link {
+    color: black; /* Black color for the Home link */
+    font-weight: bold; /* Makes the text bold */
+    text-decoration: none; /* Removes underline typical of links */
+}
+
+.logo {
+    width: 100px; /* adjust the width as needed */
+    height: auto;
+    display: inline-block; /* or float: left */
+    margin-right: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .logo {
+      width: 50px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .logo {
+      width: 30px;
+    }
+  }
+
